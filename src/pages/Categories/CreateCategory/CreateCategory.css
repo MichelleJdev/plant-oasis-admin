@@ -1,0 +1,10 @@
+.CreateCategory {
+  height: 100%;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .CreateCategory .container {
+    padding-right: 1rem;
+  }
+}

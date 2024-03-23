@@ -1,0 +1,78 @@
+.CheckFilter {
+  display: flex;
+  color: var(--color-secondary-light);
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.CheckFilter::-webkit-scrollbar {
+  width: 1px;
+  background-color: transparent;
+  height: 10px;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  cursor: all-scroll;
+}
+
+.CheckFilter::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: all-scroll;
+}
+
+.CheckFilter::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: none;
+}
+.CheckFilter p {
+  font-size: 14px;
+  padding: 0 0.5em;
+}
+.CheckFilter .filter-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.CheckFilter .checkbox-group {
+  position: relative;
+}
+
+.checkbox-group input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.checkbox-group label {
+  scroll-snap-align: end;
+  display: inline-block;
+  padding: 0.5em;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+  border-radius: var(--border-radius-md);
+  text-align: center;
+}
+.checkbox-group label.checked {
+  padding: 0.5em;
+
+  background: linear-gradient(
+    to right bottom,
+    var(--color-primary),
+    transparent
+  );
+  color: white;
+}

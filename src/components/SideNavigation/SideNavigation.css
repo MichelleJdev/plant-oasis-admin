@@ -1,0 +1,85 @@
+.SideNavigation {
+  color: var(--color-600);
+  background-color: rgba(177, 201, 212, 0.732);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: transform 0.3s linear;
+  overflow-y: auto;
+}
+
+.SideNavigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.SideNavigation li {
+  color: var(--color-secondary);
+}
+
+.SideNavigation a {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+.SideNavigation a:hover {
+  transition: all 0.2s linear;
+  color: var(--color-secondary-dark);
+  transform: translateX(3px);
+}
+.SideNavigation a.active:hover {
+  transition: all 0.3s linear;
+  transform: none;
+}
+
+.SideNavigation svg {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.MainNavigation a.active {
+  color: var(--color-secondary);
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 900px) {
+  .SideNavigation {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .SideNavigation .lg {
+    display: none;
+  }
+
+  .SideNavigation {
+    font-size: var(--font-xs);
+    gap: 1rem;
+    flex-basis: 0;
+    min-width: unset;
+    padding: 1rem 2rem;
+  }
+
+  .SideNavigation ul {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SideNavigation svg {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+  .SideNavigation a {
+    transition: transform 0.2 ease-in-out;
+  }
+  .SideNavigation a:hover {
+    transition: all 0.2 ease-in-out;
+    transform: scale(1.1);
+  }
+  .SideNavigation a.active svg {
+    transform: scale(1.1);
+  }
+}

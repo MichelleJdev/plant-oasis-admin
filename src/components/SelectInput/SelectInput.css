@@ -1,0 +1,26 @@
+.SelectInput {
+  position: relative;
+}
+
+.SelectInput select {
+  padding: 0.5em 1em;
+}
+
+.SelectInput .confirmation-buttons {
+  position: absolute;
+  right: 1em;
+  top: 0.25em;
+}
+
+.confirmation-buttons button {
+  margin-inline: 2px;
+  padding-inline: 0.25em;
+  border: none;
+  color: white;
+}
+.confirmation-buttons .cancel {
+  background-color: var(--color-warning);
+}
+.confirmation-buttons .confirm {
+  background-color: var(--color-success);
+}

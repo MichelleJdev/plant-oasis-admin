@@ -1,0 +1,17 @@
+.UsersBarChart {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.UsersBarChart .SelectInput {
+  margin-left: 2.5rem;
+  font-size: 4px;
+  align-self: start;
+}
+.UsersBarChart .SelectInput select {
+  font-size: 10px;
+}

@@ -1,0 +1,12 @@
+.ContentLoading {
+  color: white;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}

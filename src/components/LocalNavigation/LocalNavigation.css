@@ -1,0 +1,56 @@
+.LocalNavigation {
+  color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+.LocalNavigation li a {
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.LocalNavigation li a svg {
+  transition: all 0.2s linear;
+}
+
+.LocalNavigation li a:hover {
+  transition: all 0.2s linear;
+  color: var(--color-primary-dark);
+}
+.LocalNavigation li a:hover svg {
+  transition: all 0.2s linear;
+  transform: translateX(2px);
+}
+
+.LocalNavigation li a svg {
+  margin-left: 5px;
+}
+
+.LocalNavigation a.active {
+  color: var(--color-primary-dark);
+  font-weight: normal;
+}
+
+.LocalNavigation a.active:hover {
+  color: var(--color-primary);
+}
+
+.LocalNavigation a.active:hover svg {
+  color: inherit;
+  transform: none;
+}
+
+.LocalNavigation ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .LocalNavigation {
+    padding-inline: 1rem;
+  }
+}

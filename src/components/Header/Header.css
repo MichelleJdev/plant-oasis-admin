@@ -1,0 +1,43 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px GREY;
+}
+
+.Header ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.Header .username {
+  display: flex;
+  align-items: center;
+}
+.Header .username svg {
+  margin-right: 0.25em;
+}
+.Header .logout-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.Header .logout-btn:hover {
+  cursor: pointer;
+  transform: translateX(1px);
+}
+
+.Header .username > * {
+  margin-left: 3px;
+}
+
+.Header svg {
+  font-size: 1.2rem;
+}

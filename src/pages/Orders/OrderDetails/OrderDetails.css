@@ -1,0 +1,36 @@
+.OrderDetails {
+  height: 100%;
+  overflow: auto;
+  padding: 1.5rem 1rem;
+}
+.OrderDetails .order-no,
+.OrderDetails .total {
+  color: var(--color-secondary);
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+}
+.OrderDetails .order-no span,
+.OrderDetails .total span {
+  color: var(--color-100);
+}
+
+.OrderDetails h3 {
+  margin-top: 1em;
+  color: var(--color-100);
+  letter-spacing: 0.05em;
+}
+
+.OrderDetails dt,
+.OrderDetails address {
+  color: var(--color-400);
+  letter-spacing: 0.01em;
+  margin-top: 0.25em;
+}
+
+.OrderDetails li {
+  /* border-bottom: 1px dashed white; */
+  padding: 1em 0.5em;
+}
+.OrderDetails li .price {
+  font-weight: bold;
+}

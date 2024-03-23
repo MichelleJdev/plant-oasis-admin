@@ -1,0 +1,16 @@
+.UserDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.UserDetails > div {
+  font-size: var(--font-sm);
+  color: var(--color-500);
+}
+.UserDetails > div span {
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-right: 0.5em;
+}

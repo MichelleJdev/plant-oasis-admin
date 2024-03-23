@@ -1,0 +1,28 @@
+.table-wrapper {
+  height: calc(100% - 3rem);
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+}
+
+.UsersTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.UsersTable th {
+  text-align: left;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 1em white;
+  color: var(--color-primary);
+  padding: 0.5em 1em;
+}
+
+.UsersTable td {
+  padding: 0.5em 1em;
+}
+
+.UsersTable tbody tr {
+  scroll-snap-align: end;
+}

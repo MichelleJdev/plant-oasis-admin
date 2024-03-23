@@ -1,0 +1,24 @@
+.CreateUser {
+  height: 100%;
+}
+.pass-input-wrapper {
+  position: relative;
+}
+
+.show-hide-btn {
+  position: absolute;
+  right: 1em;
+
+  top: 0.5em;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--color-secondary-light);
+}
+.CreateUser .pass-type {
+  padding-right: 3rem;
+}

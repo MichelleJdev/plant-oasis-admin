@@ -1,0 +1,27 @@
+.CreateProduct {
+  height: 100%;
+  overflow: auto;
+  padding: 1rem 0.5rem;
+}
+
+.CreateProduct .catLoader {
+  padding: 0.5em 1em;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.CreateProduct button.custom-img-btn {
+  display: none;
+}
+.CreateProduct button.submit-btn {
+  margin-left: 0;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .CreateProduct .container {
+    padding-right: 1rem;
+  }
+}

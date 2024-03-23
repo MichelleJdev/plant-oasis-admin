@@ -1,0 +1,11 @@
+.SearchBar {
+  color: var(--color-secondary-light);
+  background-color: var(--color-secondary-pale);
+}
+
+.SearchBar input {
+  padding: 0.5em 1em;
+  display: block;
+  width: 100%;
+  color: var(--color-400);
+}

@@ -1,0 +1,64 @@
+.NameEditor {
+  position: relative;
+  width: 100%;
+  min-width: 200px;
+}
+
+.rename-field {
+  display: block;
+  width: 100%;
+  padding: 0.5em 1em;
+  padding-right: 4rem;
+  color: var(--color-400);
+  border: none;
+  border-radius: 3px;
+}
+
+.rename-field.disabled {
+  color: var(--color-200);
+}
+
+.rename-btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.rename-btn-group .btn {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-inline: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rename-btn-group .btn:disabled {
+  cursor: not-allowed;
+}
+.rename-btn-group .btn:disabled:hover {
+  background-color: var(--color-success);
+}
+
+.rename-btn-group .btn svg {
+  color: white;
+}
+.rename-btn-group .btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.confirm-btn {
+  background-color: var(--color-success);
+}
+.confirm-btn:hover {
+  background-color: var(--color-success-dark);
+}
+
+.cancel-btn {
+  background-color: var(--color-warning);
+}
+.cancel-btn:hover {
+  background-color: var(--color-warning-dark);
+}

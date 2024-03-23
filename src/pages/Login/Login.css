@@ -1,0 +1,19 @@
+.Login .container {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 2rem 5%;
+}
+
+.Login .input-group.pass {
+  position: relative;
+}
+.Login .input-group .visibilityBtn {
+  position: absolute;
+  bottom: 0.5em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.Login .pwField {
+  padding-right: 3em;
+}
