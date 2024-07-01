@@ -15,7 +15,7 @@ function Header() {
   return (
     <header className="Header layout-item">
       <Link to="/">
-        <h1>Garden Oasis</h1>
+        <h1>The Garden Hub</h1>
       </Link>
       <ul>
         {" "}
